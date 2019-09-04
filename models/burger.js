@@ -3,16 +3,17 @@ var orm = require('./config/orm.js');
 var burger = {
 
     selectAll: function () {
-        orm.selectAll('burger_db');
+        orm.selectAll('burgers');
     },
 
     //insert a burger
     insertone: function (burgerName) {
-        orm.insertOne('burger_db','',burgerName);
+        orm.insertOne('burgers','burger_name',burgerName);
     },
 
     //update burger
-    orm.updateOne();
+   updateone: function(burgerName,id) 
+   {orm.updateOne('burgers','burger_name',burgerName,id);}
 }
 
 module.exports = burger;
