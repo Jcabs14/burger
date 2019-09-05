@@ -1,28 +1,53 @@
-<h1>EAT DA BURGER</h1>
+<div class='container'>
+    <h1 class='text-center'>EAT DA BURGER</h1>
 
-<h2>BURGERS WAITING TO BE EATEN</h2>
+    <div class='row'>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <h4 class="card-title text-center">
+                    EAT THESE ONES!
+                </h4>
+                <div class="card-body">
+                    <ul>
+                        {{#each burgers}}
 
-<ul>
-  {{#each burgers}}
+                        {{/each}}
+                    </ul>
 
-  {{/each}}
-</ul>
+                </div>
+            </div>
+        </div>
 
-<h2>Burgers that have been eaten!</h2>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+                <h4 class="card-title text-center">
+                    YOU ATE THESE ONES!
+                </h4>
+                <div class="card-body">
 
-<ul>
+                    <p class="card-text devoured">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+                        euismod
+                        odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+            </div>
+        </div>
+
+        {{!-- <ul>
   {{#each burgers}}
     {{#if devoured}}
   {{/each}}
-</ul>
+</ul> --}}
 
-<h2>What kind of Burger do you want?</h2>
-<form class="create-form">
+    </div> <!-- end of row -->
 
-  <div class="form-group">
-    <label for="burger">Burger Name:</label>
-    <input type="text" id="burger" name="burgerName">
-  </div>
+    <h2>What kind of Burger do you want?</h2>
+    <form class="create-form">
 
-  <button type="submit">Order Up!</button>
-</form>
+        <div class="form-group">
+            <label for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="burgerName">
+        </div>
+
+        <button type="submit">Order Up!</button>
+    </form>
+</div>
