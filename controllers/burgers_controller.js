@@ -17,3 +17,14 @@ router.get("/", function (req, res) {
         
     })
 });
+
+router.post("/api/burgers", function(req, res) {
+    burger.insertOne([
+      "burgerName", 
+    ], [
+      req.body.burgerName,
+    ], function(result) {
+      // Send back the ID of the new burger
+      res.json({ id: result.insertId });
+    });
+  });

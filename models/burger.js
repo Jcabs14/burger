@@ -7,12 +7,12 @@ var burger = {
     },
 
     //insert a burger
-    insertone: function (burgerName) {
+    insertOne: function (burgerName) {
         orm.insertOne('burgers','burger_name',burgerName);
     },
 
     //update burger
-   updateone: function(burgerName,id) 
+   updateOne: function(burgerName,id) 
    {orm.updateOne('burgers','burger_name',burgerName,id);}
 }
 
