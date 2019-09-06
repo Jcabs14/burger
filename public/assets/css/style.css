@@ -1,0 +1,9 @@
+#jt{
+    background-image: url('../img/burger-background.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+html{
+    font: bold;
+}

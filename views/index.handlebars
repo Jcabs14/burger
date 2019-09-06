@@ -1,5 +1,9 @@
 <div class='container'>
-    <h1 class='text-center'>EAT DA BURGER</h1>
+    <div class="jumbotron jumbotron-fluid" id='jt'>
+        <div class="container">
+            <h1 class="display-4 text-center">EAT DA BURGER!</h1>
+        </div>
+    </div>
 
     <div class='row'>
         <div class="col-lg-6 mb-4">
@@ -24,20 +28,14 @@
                     YOU ATE THESE ONES!
                 </h4>
                 <div class="card-body">
-
-                    <p class="card-text devoured">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-                        euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
+                    {{!-- <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{/each}}
+                    </ul> --}}
                 </div>
             </div>
         </div>
-
-        {{!-- <ul>
-  {{#each burgers}}
-    {{#if devoured}}
-  {{/each}}
-</ul> --}}
-
     </div> <!-- end of row -->
 
     <h2>What kind of Burger do you want?</h2>
@@ -48,6 +46,6 @@
             <input type="text" id="burger" name="burgerName">
         </div>
 
-        <button type="submit">Order Up!</button>
+        <button type="submit" id='orderUp'>Order Up!</button>
     </form>
 </div>
